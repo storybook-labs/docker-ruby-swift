@@ -38,8 +38,8 @@ install_ruby() {
     chruby "ruby-$version"
     ruby -v
     gem update --system
-
 }
 
-install_ruby 2.4.1 ccfb2d0a61e2a9c374d51e099b0d833b09241ee78fc17e1fe38e3b282160237c
+# install_ruby 2.4.1 ccfb2d0a61e2a9c374d51e099b0d833b09241ee78fc17e1fe38e3b282160237c
 # install_ruby 2.4.2 08e72d0cbe870ed1317493600fbbad5995ea3af2d0166585e7ecc85d04cc50dc
+install_ruby 2.4.3 0a703dffb7737f56e979c9ebe2482f07751803c71e307c20446b581e0f12cf30

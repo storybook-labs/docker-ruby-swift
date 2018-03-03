@@ -10,7 +10,8 @@ ADD install-ruby.sh /tmp/install-ruby.sh
 RUN chmod a+x /tmp/install-ruby.sh
 RUN cd /tmp && ./install-ruby.sh && rm install-ruby.sh
 
-ENV PATH /opt/rubies/ruby-2.4.1/bin:$PATH
+ENV PATH /opt/rubies/ruby-2.4.3/bin:$PATH
+ENV LANG en_US.UTF-8
 
 RUN apt-get -yq install sqlite3 && \
 	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
